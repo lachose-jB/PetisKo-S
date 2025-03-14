@@ -13,7 +13,7 @@
 /* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Satisfy",  sans-serif;
+  --heading-font: "Playfair Display",  sans-serif;
   --nav-font: "Poppins",  sans-serif;
 }
 
@@ -78,7 +78,7 @@ a:hover {
 }
 .bannerh1 {
   font-family: 'Playfair Display', serif;
-  font-size: 60px;
+  font-size: 6rem !important;
   text-transform: uppercase;
   letter-spacing: 4px;
   font-weight: bold;
@@ -87,16 +87,13 @@ a:hover {
 .logomidle{
   width: 20%;
 }
-.bannerh2 {
-  font-size: 18px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 10px;
+.bannerh2{
+  
 }
 
 .line {
   display: inline-block;
-  width: 50px;
+  width: 150px;
   height: 2px;
   background-color: white;
   vertical-align: middle;
@@ -874,10 +871,13 @@ section,
 }
 
 .hero h2 {
-  margin-bottom: 30px;
-  font-size: 48px;
+  margin-bottom: 2%;
   font-weight: 700;
   animation: fadeInDown 1s both;
+  font-size: 2rem !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
 }
 
 .hero h2 span {
@@ -901,7 +901,12 @@ section,
     max-width: 60%;
   }
 }
-
+.btnst2{
+  background-color: #053F91;
+}
+.btnst{
+  background-color: #00C062;
+}
 .hero .btn-get-started {
   color: var(--contrast-color);
   font-weight: 500;
@@ -913,7 +918,6 @@ section,
   transition: 0.5s;
   margin: 10px 5px;
   animation: fadeInUp 1s both 0.4s;
-  border: 2px solid var(--accent-color);
 }
 
 .hero .btn-get-started:hover {

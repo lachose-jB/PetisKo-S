@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>PETISKO'S-Accueil</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header fixed-top">
+    <div class="branding d-flex align-items-cente">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img src="assets/img/logo.png" alt="" class="logoTop"> 
+         <!--<h1 class="sitename">Delicious</h1>-->
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#hero" class="active">Accueil</a></li>
+            <li><a href="./pages/menu.html">Voir le menu</a></li>
+            <li><a href="./pages/reservation.html">Réserver une table</a></li>
+            <li><a href="#specials">Commander en ligne</a></li>
+            <li><a href="./pages/contact.html">Nous contacter</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <div class="carousel-item active">
+          <img src="assets/img/2.jpg" alt="">
+          <div class="carousel-container">
+            <h2 class="bannerh2">
+              <span class="line"></span> BIENVENUE CHEZ <span class="line"></span>
+            </h2>
+            <h1 class="bannerh1">Pétisko's</h1>
+            <div>
+              <a href="#menu" class="btn-get-started btnst2">VOIR LE MENU</a>
+              <a href="#book-a-table" class="btn-get-started btnst">RÉSERVER</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section light-background">
+
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/4.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+            <h3>à propos de nous</h3>
+            <h1 class="fst-italic">Découvrez l’univers Petisko’s</h1>
+            <p>
+              Periskos, ce n’est pas juste un restaurant, c’est une escapade gourmande. Que vous soyez tenté par un bacalhau fondant, une feijoada réconfortante ou une picanha grillée à la perfection, préparez-vous à un vrai voyage culinaire.
+            </p>
+            <ul>
+              <li><i class="bi bi-check2-all"></i> <span>Une cuisine maison, préparée avec des produits frais.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Une ambiance conviviale et chaleureuse.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Une cuisine maison, préparée avec des produits frais.</span></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- /About Section -->
+
+    <!-- Book A Table Section -->
+    <section id="book-a-table" class="book-a-table section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <img src="assets/img/logo2.png" alt="" class="logomidle"> </br>
+        <h2>Réservation rapide et sécurisée</h2>
+        <h1>Réservez votre table en quelques clics</h1>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row g-0" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 reservation-img" style="background-image: url(assets/img/reservation.jpg);"></div>
+
+          <div class="col-lg-8 d-flex align-items-center reservation-form-bg" data-aos="fade-up" data-aos-delay="200">
+            <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
+              <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Votre nom" required="">
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Votre e-mail" required="">
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="text" class="form-control" name="phone" id="phone" placeholder="Votre téléphone" required="">
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="date" name="date" class="form-control" id="date" placeholder="Date" required="">
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="time" class="form-control" name="time" id="time" placeholder="Temps" required="">
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="number" class="form-control" name="people" id="people" placeholder="# des gens" required="">
+                </div>
+              </div>
+
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+              </div>
+
+              <div class="text-center mt-3">
+                <div class="loading">chargement</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Votre demande de réservation a été envoyée. Nous vous rappellerons ou vous enverrons un e-mail pour confirmer votre réservation. Merci !</div>
+                <button type="submit">Réserver une table</button>
+              </div>
+            </form>
+          </div><!-- End Reservation Form -->
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- /Book A Table Section -->
+
+    <!-- Events Section -->
+    <section id="events" class="events section">
+
+      <img class="slider-bg" src="assets/img/12.jpg" alt="" data-aos="fade-in">
+
+      <div class="container secFlex">
+        <img src="assets/img/logo.png" alt="" class="logoMid">
+        
+        <div class="swiper init-swiper" data-aos="fade-up" data-aos-delay="100">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="row gy-4 event-item">
+                <div class="col-lg-6">
+                  <img src="assets/img/events-slider/events-slider-1.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h2>FAITES-VOUS LIVRER</h2>
+                  <h1>Commandez en ligne et savourez chez vous</h1>
+                  <div class="price">
+                    <p><span>€100</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    Lorem Him Carrots, développeur de premier cycle de tomates, mais je serai dans un iniquod à l'époque pour travailler et douleur
+une bonne chose.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check2-circle"></i> <span>L'emploi d'Ullamco n'est qu'à l'aliquip de la commodité de la conséquence.</span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>Automatiquement la douleur dans le plaisir de la douleur dans le plaisir du jeu.</span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>L'emploi d'Ullamco n'est qu'à l'aliquip de la commodité de la conséquence.</span></li>
+                  </ul>
+                  <p>
+                    L'emploi d'Ullamco n'est qu'à l'aliquip de la commodité de la conséquence. Automatiquement dans une douleur irreu dans un plaisir critiqué
+Veut être une paire de copeaux douloureux, pas plus
+                  </p>
+                </div>
+              </div>
+            </div><!-- End Slider item -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- /Events Section -->
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Gallery</h2>
+        <div><span> Découvrez notre </span> <span class="description-title">univers en images</span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-0">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item gal-item">
+              <a href="assets/img/gallery/gallery-1.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item gal-item">
+              <a href="assets/img/gallery/gallery-2.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item gal-item">
+              <a href="assets/img/gallery/gallery-3.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item gal-item">
+              <a href="assets/img/gallery/gallery-4.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item gal-item">
+              <a href="assets/img/gallery/gallery-5.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item gal-item">
+              <a href="assets/img/gallery/gallery-6.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item gal-item">
+              <a href="assets/img/gallery/gallery-7.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4 ">
+            <div class="gallery-item gal-item">
+              <a href="assets/img/gallery/gallery-8.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- /Gallery Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section dark-background">
+
+      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <img class="logoTes" src="assets/img/logo.png" alt="" data-aos="fade-in">
+        <h3>CE QUE DISENT LES CLIENTS</h3>
+        <h1>Vos Avis compte pour nous</h1>
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Emanuel Marques Oliveira</h3>
+                <h4>Ceo &amp; Fondatrice</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Très bonne accueil service super.
+                    Pour les plats très bon et copieux....</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Reda Chraoui</h3>
+                <h4>Designer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Très bon restaurant on y mange très bien✅</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Cintia Fernandes Oliveira</h3>
+                <h4>Store Owner</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Un restaurant où vous pourrez trouver la meilleure cuisine brésilienne, plusieurs plats délicieux.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Sld consulting</h3>
+                <h4>Pigiste</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Restaurant portugais super bon</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>Jennifer Jennifer</h3>
+                <h4>Entrepreneur</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Tres bonne cuisine et bonne ambiance …</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- /Testimonials Section -->
+
+    <!-- Specials Section -->
+    <section id="specials" class="specials section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Spéciales</h2>
+        <div><span>Vérifiez notre</span> <span class="description-title">Spéciales</span></div>
+      </div>
+      <!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#specials-tab-1">modiSitEst</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-2">D'où le présent mais</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-3">J'explique ou expliquel</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-4">Nos gens sont comme</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-5">Régulier pour se préparer ou</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="specials-tab-1">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>S'ouvrir à un architecte</h3>
+                    <p class="fst-italic">Qui fait l'éloge des conséquences du travail de la sage DLA le Pardo, le Raqer a Videna Maraeta Paula Marka</p>
+                    <p>Et à nous ses ancêtres.Pour les plaisirs, comme la flatterie et le sont.Les suggère très très haine.Incident ici pour être inconfort ou qui.C'est une petite chose qui sera géniale.Pour réaliser la douleur de la personne qui est similaire à l'accusation de notre entreprise, cependant,</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/specials-1.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="specials-tab-2">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Le lisse de la vérité sauftturi</h3>
+                    <p class="fst-italic">Qui fait l'éloge des conséquences du travail de la sage DLA le Pardo, le Raqer a Videna Maraeta Paula Marka</p>
+                    <p>C'est un plaisir de réaliser un homme.C'est une erreur, tout ce qu'ils rejettent sont là.Il ne doit pas être rejeté, par conséquent, d'accuser l'accusation de lui, et il souhaite aux plaisirs mêmes du.L'option de l'accusation béni Lerode Pakto Madirna Debt Vafle de Nideran Pal</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/specials-2.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="specials-tab-3">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Entraver la haine facile à aveugler ou ouvrir un</h3>
+                    <p class="fst-italic">Ces plaisirs.Je déteste comme ça, en effet, n'est pas un vol.Celui qui est né ne s'appelle pas la douleur et.Le pwned ou veut chercher du durage ou</p>
+                    <p>Le droit des bureaux déteste les choses.Parmi ceux-ci, pour le suivre qui corrompt la faute de la vérité.Aucun des deux n'a besoin pour lui.Commodish le plus petit inconfort, mais les laboratoires de la haine.Leurs détestes ne savent pas comment en éviter.Payer l'option de ces options</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/specials-3.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="specials-tab-4">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Des douleurs de vol ont découvert un intense pour accuser une douleur douloureuse intense</h3>
+                    <p class="fst-italic">L'ensemble du compte ouvert.Réjouissez-vous dans le bon plaisir à droite tout</p>
+                    <p>Et le résultat du plaisir du plaisir libre.Nos besoins réels de certains évitent les dettes qui veulent.Cela est dû à la plus grande erreur dans les conséquences du corps et.Choisir le pire mais la vérité ouverte pour un inventeur de collation</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/specials-4.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="specials-tab-5">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Cela arrivera à la reda de la matrolat Pad Rone réel</h3>
+                    <p class="fst-italic">Toute la flatterie souvent celles qui sont dues plus loin.</p>
+                    <p>notre Exercice Est Tout Pour Rejeter Le Moins Tous Acceptés Comme Vous N'aimez Pas Celui De Qui Mais La Chose Même Qui Déteste, Cependant, Et Celles Qui Ont Une Partie Du Film Occaecati, Mais C'est Soit Une Vie D'inconfort, Soit</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/specials-5.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- /Specials Section -->
+
+    <!-- Chefs Section -->
+    <section id="chefs" class="chefs section"> 
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Chefs</h2>
+        <div><span>Notre professionnel</span> <span class="description-title">Chefs</span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-5">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="pic"><img src="assets/img/chefs/chefs-1.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Maître quif</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="pic"><img src="assets/img/chefs/chefs-2.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Patissier</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <div class="pic"><img src="assets/img/chefs/chefs-3.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>Cook</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- /Chefs Section -->
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="why-us section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Pourquoi nous</h2>
+        <div><span>Pourquoi choisir</span> <span class="description-title">Notre restaurant</span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-item">
+              <span>01</span>
+              <h4><a href="" class="stretched-link">Lorem Ipsum</a></h4>
+              <p>Emploi de l'UAMCO mais pour alilip de la commodité des conséquences.Le leader principal pour plaire</p>
+            </div>
+          </div><!-- Card Item -->
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-item">
+              <span>02</span>
+              <h4><a href="" class="stretched-link">Repellat Nihil</a></h4>
+              <p>La douleur est d'éviter le plaisir aveuglé d'être.La déclaration de la vérité de la douleur et ou de terrible une poudre para da</p>
+            </div>
+          </div><!-- Card Item -->
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-item">
+              <span>03</span>
+              <h4><a href="" class="stretched-link">Ad ad velit qui</a></h4>
+              <p>Les animaux sont pires.Ou les douleurs de la vie sont dues ou pour quiconque</p>
+            </div>
+          </div><!-- Card Item -->
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- /Why Us Section -->
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-geo-alt icon"></i>
+          <div class="address">
+            <h4>Address</h4>
+            <p>A108 Adam Street</p>
+            <p>New York, NY 535022</p>
+            <p></p>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-telephone icon"></i>
+          <div>
+            <h4>Contact</h4>
+            <p>
+              <strong>Phone:</strong> <span>+1 5589 55488 55</span><br>
+              <strong>Email:</strong> <span>info@example.com</span><br>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-clock icon"></i>
+          <div>
+            <h4>Opening Hours</h4>
+            <p>
+              <strong>Lundi au Samedi:</strong> <span>11AM - 23PM</span><br>
+              <strong>SundayDimanche</strong>: <span>Fermée</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h4>Follow Us</h4>
+          <div class="social-links d-flex">
+            <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/barpetiskos/" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Droit d'auteur</span> <strong class="px-1 sitename">Petisko’s</strong> <span>Tous droits réservés</span></p>
+      <div class="credits">
+        Conçu par <a href="https://bn2smart.com/">bn2smart</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

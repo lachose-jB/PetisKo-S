@@ -1,15 +1,3 @@
-/**
-* Template Name: Delicious
-* Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -27,96 +15,6 @@
   --contrast-color: #00c062; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
-:root {
-  --nav-color: #ffffff;  /* The default color of the main navmenu links */
-  --nav-hover-color: #ffdf59; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #0349aa; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #ffdf59; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
-}
-
-/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
-
-.light-background {
-  --background-color: #fffaf3;
-  --surface-color: #ffffff;
-}
-
-.dark-background {
-  --background-color: #1e160d;
-  --default-color: #ffffff;
-  --heading-color: #ffffff;
-  --surface-color: #42301c;
-  --contrast-color: #ffffff;
-}
-
-/* Smooth scroll */
-:root {
-  scroll-behavior: smooth;
-}
-
-/*--------------------------------------------------------------
-# General Styling & Shared Classes
---------------------------------------------------------------*/
-body {
-  color: var(--default-color);
-  background-color: var(--background-color);
-  font-family: var(--default-font);
-}
-
-a {
-  color: var(--accent-color);
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-a:hover {
-  color: color-mix(in srgb, var(--accent-color), transparent 25%);
-  text-decoration: none;
-}
-.bannerh1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 6rem !important;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  font-weight: bold;
-  margin: 10px 0;
-}
-.logomidle{
-  width: 20%;
-}
-
-.line {
-  display: inline-block;
-  width: 150px;
-  height: 2px;
-  background-color: white;
-  vertical-align: middle;
-  margin: 0 10px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--heading-color);
-  font-family: var(--heading-font);
-}
-
-.logoMid{
-  width: 15%;
-}
-.secFlex{
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  flex-direction: column;
-}
 /* Pulsating Play Button
 ------------------------------*/
 .pulsating-play-btn {
@@ -196,57 +94,92 @@ h6 {
   }
 }
 
-/* PHP Email Form Messages
-------------------------------*/
-.php-email-form .error-message {
-  display: none;
-  background: #df1529;
-  color: #ffffff;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .sent-message {
-  display: none;
-  color: #ffffff;
-  background: #059652;
+/* Global Colors*/
+body {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-flow: column;
+  align-content: center;
   text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
+  justify-content: center; 
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-family: var(--default-font);
 }
 
-.php-email-form .loading {
-  display: none;
-  background: var(--surface-color);
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  text-decoration: none;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+}
+img{
+  width: 100%;
+}
+
+section{
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  height: auto;
+  background-color: var(--background-color);
+  padding: 60px 0;
+  scroll-margin-top: 112px;
+  overflow: clip;
+}
+
+/*--------------------------------------------------------------
+# Global Section Titles
+--------------------------------------------------------------*/
+.section-title {
   text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
+  padding-bottom: 60px;
+  position: relative;
 }
 
-.php-email-form .loading:before {
-  content: "";
+.section-title h2 {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding: 8px 20px;
+  margin: 0;
+  background: color-mix(in srgb, var(--accent-color), transparent 90%);
+  color: var(--accent-color);
   display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid var(--accent-color);
-  border-top-color: var(--surface-color);
-  animation: php-email-form-loading 1s linear infinite;
+  text-transform: uppercase;
+  border-radius: 50px;
+  font-family: var(--default-font);
 }
 
-@keyframes php-email-form-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
+.section-title div {
+  color: var(--heading-color);
+  margin: 10px 0 0 0;
+  font-size: 32px;
+  font-weight: 700;
+  font-family: var(--heading-font);
 }
+
+.section-title div .description-title {
+  color: var(--accent-color);
+}
+
 
 /*--------------------------------------------------------------
 # Global Header
@@ -259,9 +192,14 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   background-color: var(--background-color);
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
 }
-
 .header .topbar {
+  position: relative;
   background-color: var(--background-color);
   padding: 10px 0 0 0;
   font-size: 14px;
@@ -314,37 +252,34 @@ h6 {
 }
 
 .header .branding {
-  min-height: 60px;
+  position: relative;
   padding: 5px 0;
+  width: 100%;
+  justify-content: center;
+}
+.logoTop {
+  position: relative;
+  padding: 1%;
+  width: 20%;
+  text-align: center;
 }
 
-.header .logo {
-  line-height: 1;
+.containtNav{
+  position: relative;
+  height: 15vh !important;
 }
-
-.header .logo img {
-  width: 0%;
-}
-
-.header .logo h1 {
-  font-size: 30px;
-  margin: 0;
-  font-weight: 700;
-  color: var(--heading-color);
-}
-
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: rgba(21, 17, 13, 0.85);
+  --background-color: rgba(0, 0, 0, 0.85);
 }
-
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Navmenu - Desktop */
 @media (min-width: 1200px) {
   .navmenu {
+    position: relative;
     padding: 0;
   }
 
@@ -581,10 +516,14 @@ h6 {
 --------------------------------------------------------------*/
 .footer {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color:var(--background-color);
   font-size: 14px;
   padding: 40px 0 0 0;
   position: relative;
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .footer .icon {
@@ -714,105 +653,6 @@ h6 {
   }
 }
 
-/*--------------------------------------------------------------
-# Global Page Titles & Breadcrumbs
---------------------------------------------------------------*/
-.page-title {
-  color: var(--default-color);
-  background-color: var(--background-color);
-  position: relative;
-}
-
-.page-title .heading {
-  padding: 160px 0 60px 0;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-}
-
-.page-title .heading h1 {
-  font-size: 38px;
-  font-weight: 700;
-}
-
-.page-title nav {
-  background-color: color-mix(in srgb, var(--default-color), transparent 90%);
-  padding: 20px 0;
-}
-
-.page-title nav ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.page-title nav ol li+li {
-  padding-left: 10px;
-}
-
-.page-title nav ol li+li::before {
-  content: "/";
-  display: inline-block;
-  padding-right: 10px;
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
-}
-
-/*--------------------------------------------------------------
-# Global Sections
---------------------------------------------------------------*/
-section,
-.section {
-  color: var(--default-color);
-  background-color: var(--background-color);
-  padding: 60px 0;
-  scroll-margin-top: 112px;
-  overflow: clip;
-}
-
-@media (max-width: 1199px) {
-
-  section,
-  .section {
-    scroll-margin-top: 105px;
-  }
-}
-
-/*--------------------------------------------------------------
-# Global Section Titles
---------------------------------------------------------------*/
-.section-title {
-  text-align: center;
-  padding-bottom: 60px;
-  position: relative;
-}
-
-.section-title h2 {
-  font-size: 13px;
-  letter-spacing: 1px;
-  font-weight: 700;
-  padding: 8px 20px;
-  margin: 0;
-  background: color-mix(in srgb, var(--accent-color), transparent 90%);
-  color: var(--accent-color);
-  display: inline-block;
-  text-transform: uppercase;
-  border-radius: 50px;
-  font-family: var(--default-font);
-}
-
-.section-title div {
-  color: var(--heading-color);
-  margin: 10px 0 0 0;
-  font-size: 32px;
-  font-weight: 700;
-  font-family: var(--heading-font);
-}
-
-.section-title div .description-title {
-  color: var(--accent-color);
-}
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -860,7 +700,7 @@ section,
   z-index: 2;
 }
 
-.hero .carousel-container {
+.carousel-container {
   position: absolute;
   inset: 90px 64px 64px 64px;
   display: flex;
@@ -869,7 +709,23 @@ section,
   flex-direction: column;
   z-index: 3;
 }
-
+.bannerh2{
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  border: 6px solid #00C062;
+}
+.line {
+  display: inline-block;
+  width:20%;
+  height: 2px;
+  background-color: white;
+  vertical-align: middle;
+  position: relative;
+  top: 15px;
+  margin: 0 10px;
+}
 .hero h2 {
   margin-bottom: 2%;
   font-weight: 700;
@@ -987,6 +843,11 @@ section,
     transform: translate3d(0, 0, 0);
   }
 }
+
+.logoMid{
+  width: 15%;
+}
+
 
 /*--------------------------------------------------------------
 # About Section
@@ -1434,7 +1295,13 @@ section,
 # Testimonials Section
 --------------------------------------------------------------*/
 .logoTes{
-  width: 50%;
+  width: 20%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border:6px solid #00C062;
+  position: relative;
+  left: 40%;
 }
 .testimonials {
   padding: 80px 0;
@@ -1443,7 +1310,7 @@ section,
 
 .testimonials:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 30%);
+  background: color-mix(in srgb, #000000, transparent 30%);
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -1666,3 +1533,160 @@ section,
 
 
 
+/* Hero Section */
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 1rem !important;
+  }
+
+  .hero .carousel-container {
+    inset: 80px 40px 40px 40px; /* Adjusted for smaller screens */
+  }
+
+  .hero .btn-get-started {
+    font-size: 14px;
+    padding: 6px 25px;
+  }
+}
+
+/* About Section */
+@media (max-width: 768px) {
+  .about .content h3 {
+    font-size: 1.5rem;
+  }
+
+  .about .content ul li {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Why Us Section */
+@media (max-width: 768px) {
+  .why-us .card-item {
+    padding: 30px 20px;
+  }
+
+  .why-us .card-item h4 {
+    font-size: 20px;
+  }
+
+  .why-us .card-item p {
+    font-size: 13px;
+  }
+}
+
+/* Specials Section */
+@media (max-width: 768px) {
+  .specials .nav-link {
+    padding: 12px 10px;
+  }
+
+  .specials .details h3 {
+    font-size: 22px;
+  }
+}
+
+/* Events Section */
+@media (max-width: 768px) {
+  .events .event-item h3 {
+    font-size: 24px;
+  }
+
+  .events .event-item .price {
+    font-size: 20px;
+  }
+
+  .events .event-item ul li {
+    font-size: 14px;
+  }
+}
+
+/* Book A Table Section */
+@media (max-width: 768px) {
+  .book-a-table .reservation-img {
+    min-height: 300px; /* Adjusting height for smaller screens */
+  }
+
+  .book-a-table .php-email-form {
+    padding: 15px;
+  }
+
+  .book-a-table .php-email-form input[type=text],
+  .book-a-table .php-email-form input[type=email],
+  .book-a-table .php-email-form input[type=number],
+  .book-a-table .php-email-form input[type=date],
+  .book-a-table .php-email-form input[type=time],
+  .book-a-table .php-email-form textarea {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+}
+
+/* Gallery Section */
+@media (max-width: 768px) {
+  .gallery .gallery-item {
+    border-right: 1px solid var(--background-color);
+    border-bottom: 1px solid var(--background-color);
+  }
+
+  .gal-item {
+    margin: 5px;
+  }
+}
+
+/* Chefs Section */
+@media (max-width: 768px) {
+  .chefs .member .pic {
+    margin-bottom: 30px;
+  }
+
+  .chefs .member h4 {
+    font-size: 14px;
+  }
+
+  .chefs .member span {
+    font-size: 12px;
+  }
+}
+
+/* Testimonials Section */
+@media (max-width: 768px) {
+  .testimonials .testimonial-item {
+    margin-bottom: 30px;
+  }
+
+  .testimonials .testimonial-item h3 {
+    font-size: 18px;
+  }
+
+  .testimonials .testimonial-item h4 {
+    font-size: 12px;
+  }
+
+  .testimonials .testimonial-item p {
+    font-size: 14px;
+  }
+}
+
+/* Contact Section */
+@media (max-width: 768px) {
+  .contact .info {
+    padding: 30px;
+  }
+
+  .contact .info h3 {
+    font-size: 20px;
+  }
+
+  .contact .php-email-form input[type=text],
+  .contact .php-email-form input[type=email],
+  .contact .php-email-form textarea {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+
+  .contact .php-email-form button[type=submit] {
+    padding: 12px 40px;
+  }
+}

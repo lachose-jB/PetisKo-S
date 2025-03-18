@@ -9,7 +9,8 @@
         "ignore": [
           "user-select",
           "background-color: color-mix(in srgb, var(--background-color), transparent 30%)",
-          "color: color-mix(in srgb, var(--default-color), transparent 40%)"
+          "color: color-mix(in srgb, var(--default-color), transparent 40%)",
+          "color: color-mix(in srgb, var(--accent-color), transparent 25%)"
         ]
       }
     ]

@@ -268,7 +268,7 @@
   
   /* Style des titres */
 .pagesPaire h2 {
-	font-size: 2em;
+	font-size: 2rem;
 	margin: 20px 0;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -292,7 +292,7 @@
   }
   
 .pagesPaire ul li {
-	font-size: 1em;
+	font-size: 0.5em;
 	margin: 12px 0;
 	display: flex;
 	justify-content: space-between;

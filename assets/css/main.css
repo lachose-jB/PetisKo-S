@@ -527,8 +527,7 @@ section{
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
-  color: var(--blancr);
-  background-color:var(--noir);
+  color: var(--blanc);
   font-size: 14px;
   padding: 40px 0 0 0;
   position: relative;
@@ -536,10 +535,16 @@ section{
   display:flex;
   flex-direction: column;
   justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Bleu avec transparence */
+  background-image: url("../img/10.jpg"); /* Remplacez par l'URL de votre image */
+  background-size: cover; /* Pour couvrir tout l'espace */
+  background-position: center; /* Centrer l'image */
+  background-blend-mode: overlay; /* Mélange couleur + image */
+  background-repeat: no-repeat;
 }
 
 .footer .icon {
-  color: var(--accent-color);
+  color: var(--jaune);
   margin-right: 15px;
   font-size: 24px;
   line-height: 0;
@@ -549,6 +554,7 @@ section{
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 15px;
+  font-family: var(--nav-font);
 }
 
 .footer .address p {
@@ -570,8 +576,9 @@ section{
 }
 
 .footer .social-links a:hover {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
+  color: var(--jaune);
+  border-color: var(--blanc);
+
 }
 
 .footer .copyright {
@@ -1020,14 +1027,12 @@ section{
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
+
 /*--------------------------------------------------------------
 # Why Us Section
 --------------------------------------------------------------*/
 .why-us {
-  background-color: #053F91;
-  background-image: url("../img/7.jpg");
-  background-size: cover;
-  background-position: center;
+  background-color: var(--blanc);
   position: relative;
 }
 
@@ -1037,14 +1042,12 @@ section{
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Voile noir transparent */
+  height: 100%; /* Voile noir transparent */
   z-index: 1;
 }
 
 .why-us * {
   position: relative;
-  z-index: 2; /* Pour que le contenu soit au-dessus du voile */
 }
 .why-us .card-item {
   background-color: #00C062;
@@ -1079,8 +1082,8 @@ section{
   padding: 0;
 }
 
-.why-us .card-item:hover {
-  background: var(--accent-color);
+.why-us .cartds:hover {
+  background: var(--jaune);
   padding: 30px 30px 70px 30px;
 }
 
@@ -1117,18 +1120,19 @@ section{
 }
 
 .specials .nav-link {
+  text-align: left;
   border: 0;
   padding: 12px 15px 12px 0;
   transition: 0.3s;
   color: var(--default-color);
   border-radius: 0;
-  border-right: 2px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-right: 2px solid color-mix(in srgb, var(--bleu), transparent 90%);
   font-weight: 600;
   font-size: 15px;
 }
 
 .specials .nav-link:hover {
-  color: var(--accent-color);
+  color: var(--bleu);
 }
 
 .specials .nav-link.active {
@@ -1206,6 +1210,14 @@ section{
   border: 2px solid #000000;
   padding:1%;
 }
+.events .event-item ul li:hover{
+  background-color: var(--noir);
+  color: var(--blanc);
+  padding:1%;
+}
+.events .event-item p{
+  text-align: left;
+}
 
 .events .event-item .price {
   font-size: 26px;
@@ -1214,9 +1226,6 @@ section{
   margin-bottom: 15px;
 }
 
-.events .event-item .price span {
-  border-bottom: 2px solid var(--accent-color);
-}
 
 .events .event-item ul {
   list-style: none;
@@ -1256,15 +1265,37 @@ section{
 .events .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
 }
+.Sell{
+  background-color: var(--vert);
+  border-radius: 20px;
+  width: 30%;
+  height: 8vh;
+  font-family: var(--nav-font);
+  color: var(--blanc);
+  text-align: center;
+}
 
+.Sell:hover{
+  background-color: var(--bleu);
+  border-radius: 20px;
+  width: 30%;
+  height: 8vh;
+  font-family: var(--nav-font);
+  color: var(--jaune);
+  text-align: center;
+}
 
 /*--------------------------------------------------------------
 # Gallery Section
 --------------------------------------------------------------*/
+.gallery{
+  text-align: center;
+  justify-content: center;
+}
 .gallery .gallery-item {
   overflow: hidden;
-  border-right: 3px solid var(--background-color);
-  border-bottom: 3px solid var(--background-color);
+  border-right: 3px solid var(--bleu);
+  border-bottom: 3px solid var(--jaune);
 }
 
 .gallery .gallery-item img {
@@ -1279,10 +1310,24 @@ section{
 .gallery .gallery-item:hover img {
   transform: scale(1.1);
 }
+.section-title h2{
+  color: var(--vert);
+  font-family: var(--nav-font);
+
+  
+}
 
 /*--------------------------------------------------------------
 # Chefs Section
 --------------------------------------------------------------*/
+.chefs{
+  background-color: rgba(255, 255, 255, 0.5); /* Bleu avec transparence */
+  background-image: url("../../assets/img/5.jpg"); /* Remplacez par l'URL de votre image */
+  background-size: cover; /* Pour couvrir tout l'espace */
+  background-position: center; /* Centrer l'image */
+  background-blend-mode: overlay; /* Mélange couleur + image */
+  background-repeat: no-repeat;
+}
 .chefs .member {
   position: relative;
 }
@@ -1364,7 +1409,6 @@ section{
   justify-content: center;
   display: flex;
   align-items: center;
-  border:6px solid #00C062;
   position: relative;
   left: 40%;
 }
@@ -1421,7 +1465,19 @@ section{
 .testimonials .testimonial-item h4 {
   font-size: 14px;
   margin: 0 0 15px 0;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: color-mix(in srgb, var(--blanc), transparent 40%);
+}
+.testimonials h3{
+  color: var(--blanc);
+  font-family: var(--nav-font);
+  font-size: 1rem;
+}
+
+.testimonials h1{
+  color: var(--jaune);
+  font-family: var(--heading-font);
+  font-size: 4rem;
+  margin-bottom: 5%;
 }
 
 .testimonials .testimonial-item .stars {
@@ -1455,7 +1511,8 @@ section{
 }
 
 .testimonials .testimonial-item p {
-  font-style: italic;
+  font-style: var(--nav-font);
+  color: var(--blanc);
   margin: 0 auto 15px auto;
 }
 
@@ -1755,3 +1812,87 @@ section{
     padding: 12px 40px;
   }
 }
+
+
+
+/*--------------------------------------------------------------
+# Book A Table Section
+--------------------------------------------------------------*/
+.book-a-tableM {
+   color: var(--noir);
+}
+
+.logomidle{
+  width: 20%;
+}
+.book-a-tableM .reservation-img {
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+.section-title h1{
+  font-family: var(--heading-font);
+  color: var(--bleu);
+}
+
+.book-a-tableM .reservation-form-bg {
+  background: color-mix(in srgb, var(--noir), transparent 97%);
+}
+
+.book-a-tableM .php-email-form {
+  padding: 30px;
+}
+
+@media (max-width: 575px) {
+  .book-a-tableM .php-email-form {
+    padding: 20px;
+  }
+}
+
+.book-a-tableM .php-email-form input[type=text],
+.book-a-tableM .php-email-form input[type=email],
+.book-a-tableM .php-email-form input[type=number],
+.book-a-tableM .php-email-form input[type=date],
+.book-a-tableM .php-email-form input[type=time],
+.book-a-tableM .php-email-form textarea {
+  font-size: 14px;
+  padding: 10px 15px;
+  box-shadow: none;
+  border-radius: 0;
+  color: var(--default-color);
+  background-color: color-mix(in srgb, var(--background-color), transparent 20%);
+  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+}
+
+.book-a-tableM .php-email-form input[type=text]:focus,
+.book-a-tableM .php-email-form input[type=email]:focus,
+.book-a-tableM .php-email-form input[type=number]:focus,
+.book-a-tableM .php-email-form input[type=date]:focus,
+.book-a-tableM .php-email-form input[type=time]:focus,
+.book-a-tableM .php-email-form textarea:focus {
+  border-color: var(--accent-color);
+}
+
+.book-a-tableM .php-email-form input[type=text]::placeholder,
+.book-a-tableM .php-email-form input[type=email]::placeholder,
+.book-a-tableM .php-email-form input[type=number]::placeholder,
+.book-a-tableM .php-email-form input[type=date]::placeholder,
+.book-a-tableM .php-email-form input[type=time]::placeholder,
+.book-a-tableM .php-email-form textarea::placeholder {
+  color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+.book-a-tableM .php-email-form button[type=submit] {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  border: 0;
+  padding: 14px 60px;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.book-a-tableM .php-email-form button[type=submit]:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+

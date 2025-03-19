@@ -1,19 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Playfair Display",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Lato", sans-serif;
+  --heading-font: "Playfair Display", serif;
+  --nav-font: "Poppins", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #0349aa; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #ec9109; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #ffdf59; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #00c062; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
-}
+  --jaune: #ffdf59; 
+  --bleu: #0349aa; 
+  --noir: #000000; 
+  --vert: #00c062; 
+  --blanc: #ffffff;
+ }
 
 /* Pulsating Play Button
 ------------------------------*/
@@ -295,9 +296,20 @@ section{
     position: relative;
   }
 
-  .navmenu a,
+  .navmenu a{
+    color: var(--blanc);
+    padding: 18px 15px;
+    font-size: 14px;
+    font-family: var(--nav-font);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    transition: 0.3s;
+  }
   .navmenu a:focus {
-    color: var(--nav-color);
+    color: var(--vert);
     padding: 18px 15px;
     font-size: 14px;
     font-family: var(--nav-font);
@@ -324,7 +336,7 @@ section{
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-hover-color);
+    color: var(--vert);
   }
 
   .navmenu .dropdown ul {
@@ -515,8 +527,8 @@ section{
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
-  color: var(--default-color);
-  background-color:var(--background-color);
+  color: var(--blancr);
+  background-color:var(--noir);
   font-size: 14px;
   padding: 40px 0 0 0;
   position: relative;
@@ -661,15 +673,16 @@ section{
   padding: 0;
 }
 
-.heroMe{
-  height: 80vh !important;
+.heroMe {
+  height: 50vh !important;
 }
+
 .hero .carousel {
   width: 100%;
   min-height: 100vh;
   padding: 0;
   margin: 0;
-  background-color: var(--background-color);
+  background-color: var(--noir);
   position: relative;
 }
 
@@ -694,82 +707,120 @@ section{
 
 .hero .carousel-item:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 50%);
+  background: color-mix(in srgb, var(--noir), transparent 40%);
   position: absolute;
   inset: 0;
   z-index: 2;
 }
 
-.carousel-container {
+.carousel-container{
+  display: flex;
   position: absolute;
-  inset: 90px 64px 64px 64px;
+  inset: 5% 5% 5% 5%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   z-index: 3;
 }
-.bannerh2{
+.titleContainer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bannerh2 {
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  border: 6px solid #00C062;
+  align-content: center;
+  
 }
+
+.bannerh1 {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  
+}
+
 .line {
   display: inline-block;
-  width:20%;
+  position: absolute;
+  width: 9vw;
   height: 2px;
-  background-color: white;
-  vertical-align: middle;
+  background-color: var(--blanc);
+  margin: 1% 2% 0 2%;
   position: relative;
-  top: 15px;
-  margin: 0 10px;
 }
+.hero h1 {
+  color: var(--blanc);
+  font-family: var(--heading-font);
+  margin-bottom: 10px;
+  font-weight: 700;
+  animation: fadeInDown 1s both;
+  font-size: clamp(2rem, 8vw, 6rem); /* Taille dynamique */
+  text-transform: uppercase;
+  letter-spacing: clamp(2px, 1vw, 15px); /* Espacement dynamique */
+}
+
 .hero h2 {
+  color: var(--blanc);
+  font-family: var(--nav-font);
   margin-bottom: 2%;
   font-weight: 700;
   animation: fadeInDown 1s both;
-  font-size: 2rem !important;
+  font-size: clamp(1.2rem, 2vw, 2rem); /* Taille dynamique */
   text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 10px;
+  letter-spacing: clamp(1px, 0.5vw, 5px); /* Espacement dynamique */
+  margin-bottom: 5px;
 }
-
+.line2 {
+  position: relative;
+  display: inline-block;
+  width: 2px;
+  height: 12vh;
+  bottom: 3vh;
+  background-color: var(--blanc);
+  margin: 0% 2vw 1vh 0%
+}
+.l2g{
+  left: 2.2%;
+}
 .hero h2 span {
   color: var(--accent-color);
 }
 
-@media (max-width: 768px) {
-  .hero h2 {
-    font-size: 30px;
-  }
-}
-
 .hero p {
   animation: fadeInDown 1s both 0.2s;
+  font-size: 1.5vw;
 }
-
-@media (min-width: 1024px) {
-
-  .hero h2,
-  .hero p {
-    max-width: 60%;
-  }
+.boutonS{
+  margin-top: 5%;
+}
+.btnst2, .btnst {
+  padding: 1rem 2rem;
+  border-radius: 50px;
 }
 .btnst2{
-  background-color: #053F91;
+  background-color: var(--bleu);
 }
-.btnst{
-  background-color: #00C062;
+.btnst {
+  background-color: var(--vert);
 }
 .hero .btn-get-started {
-  color: var(--contrast-color);
+  color: var(--blanc);
   font-weight: 500;
-  font-size: 15px;
+  font-size: 1.5vw;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 8px 32px;
+  padding: 1rem 3rem;
   border-radius: 50px;
   transition: 0.5s;
   margin: 10px 5px;
@@ -777,70 +828,43 @@ section{
 }
 
 .hero .btn-get-started:hover {
-  background: var(--accent-color);
+  background: var(--jaune);
+  color: var(--bleu);
 }
 
-.hero .carousel-control-prev,
-.hero .carousel-control-next {
-  width: 10%;
-  transition: 0.3s;
-  opacity: 0.5;
-}
-
-.hero .carousel-control-prev:focus,
-.hero .carousel-control-next:focus {
-  opacity: 0.5;
-}
-
-.hero .carousel-control-prev:hover,
-.hero .carousel-control-next:hover {
-  opacity: 0.9;
-}
-
-@media (min-width: 1024px) {
-
-  .hero .carousel-control-prev,
-  .hero .carousel-control-next {
-    width: 5%;
-  }
-}
 
 .hero .carousel-control-next-icon,
 .hero .carousel-control-prev-icon {
   background: none;
-  font-size: 32px;
-  line-height: 1;
+  font-size: 2rem;
 }
 
-.hero .carousel-indicators {
-  list-style: none;
-}
-
-.hero .carousel-indicators li {
-  cursor: pointer;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 100%, 0);
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 4vw;
+    letter-spacing: 1vw;
   }
 
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translate3d(0, -100%, 0);
+  .hero h1 {
+    font-size: 10vw;
+    letter-spacing: 2vw;
   }
 
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
+  .hero p {
+    font-size: 2vw;
+  }
+
+  .hero .btn-get-started {
+    font-size: 2vw;
+    padding: 0.8rem 2rem;
+  }
+
+  .line {
+    width: 15%;
+  }
+
+  .line2 {
+    height: 10vh;
   }
 }
 
@@ -852,36 +876,148 @@ section{
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+.about{
+  text-align: left;
+  justify-content: space-between;
+}
 .about .content h3 {
-  font-size: 1.75rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-family: var(--default-font);
+  text-align: left;
+}
+.about .content h1 {
+  font-size: 3rem;
+  font-family: var(--heading-font) !important;
+  color: var(--vert);
+  text-align: left;
+  margin:0 0 5% 0
 }
 
 .about .content ul {
   list-style: none;
   padding: 0;
+  margin: 5% 0;
 }
 
 .about .content ul li {
   padding: 10px 0 0 0;
   display: flex;
+  font-family: var(--nav-font);
 }
 
 .about .content ul i {
-  color: var(--accent-color);
-  margin-right: 0.5rem;
+  color: var(--vert);
+  margin-right: 1rem;
   line-height: 1.2;
   font-size: 1.25rem;
+}
+.aboutBtn{
+  color: var(--blanc);
+  border-radius: 20px;
+  background-color: var(--bleu);
+  width: 20%;
 }
 
 .about .content p:last-child {
   margin-bottom: 0;
+}
+.fas{
+  color: var(--blanc);
+  width: 20%;
+  margin-left: 3%;
+  height: 5vh;
 }
 
 .about .pulsating-play-btn {
   position: absolute;
   left: calc(50% - 47px);
   top: calc(50% - 47px);
+}
+
+/*--------------------------------------------------------------
+# Book A Table Section
+--------------------------------------------------------------*/
+.book-a-table {
+  background-color: rgba(0, 0, 0, 0.5); /* Bleu avec transparence */
+  background-image: url("../img/7.jpg"); /* Remplacez par l'URL de votre image */
+  background-size: cover; /* Pour couvrir tout l'espace */
+  background-position: center; /* Centrer l'image */
+  background-blend-mode: overlay; /* Mélange couleur + image */
+  background-repeat: no-repeat;
+  color: var(--blanc);
+}
+
+.logomidle{
+  width: 20%;
+}
+.book-a-table .reservation-img {
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+.section-title h1{
+  font-family: var(--heading-font);
+  color: var(--jaune);
+}
+
+.book-a-table .reservation-form-bg {
+  background: color-mix(in srgb, var(--noir), transparent 97%);
+}
+
+.book-a-table .php-email-form {
+  padding: 30px;
+}
+
+@media (max-width: 575px) {
+  .book-a-table .php-email-form {
+    padding: 20px;
+  }
+}
+
+.book-a-table .php-email-form input[type=text],
+.book-a-table .php-email-form input[type=email],
+.book-a-table .php-email-form input[type=number],
+.book-a-table .php-email-form input[type=date],
+.book-a-table .php-email-form input[type=time],
+.book-a-table .php-email-form textarea {
+  font-size: 14px;
+  padding: 10px 15px;
+  box-shadow: none;
+  border-radius: 0;
+  color: var(--default-color);
+  background-color: color-mix(in srgb, var(--background-color), transparent 20%);
+  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+}
+
+.book-a-table .php-email-form input[type=text]:focus,
+.book-a-table .php-email-form input[type=email]:focus,
+.book-a-table .php-email-form input[type=number]:focus,
+.book-a-table .php-email-form input[type=date]:focus,
+.book-a-table .php-email-form input[type=time]:focus,
+.book-a-table .php-email-form textarea:focus {
+  border-color: var(--accent-color);
+}
+
+.book-a-table .php-email-form input[type=text]::placeholder,
+.book-a-table .php-email-form input[type=email]::placeholder,
+.book-a-table .php-email-form input[type=number]::placeholder,
+.book-a-table .php-email-form input[type=date]::placeholder,
+.book-a-table .php-email-form input[type=time]::placeholder,
+.book-a-table .php-email-form textarea::placeholder {
+  color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+.book-a-table .php-email-form button[type=submit] {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  border: 0;
+  padding: 14px 60px;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.book-a-table .php-email-form button[type=submit]:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
 /*--------------------------------------------------------------
@@ -961,7 +1097,7 @@ section{
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: #ffb13b1e;
+  background-color: #975e081e;
 }
 .logoMe{
   position: absolute; top: 25%;
@@ -1035,33 +1171,23 @@ section{
 # Events Section
 --------------------------------------------------------------*/
 .events {
-  --default-color: #ffffff;
-  --background-color: #000000;
-  --heading-color: #ffffff;
   padding: 80px 0;
   position: relative;
+  
 }
 
-.events .slider-bg {
-  position: absolute;
-  inset: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
+.swiper-wrapper h2 {
+  color:var(--noir);
+  font-family: var(--nav-font);
+  font-size: 1rem;
+  text-align: left;
 }
 
-.events:before {
-  content: "";
-  background-color: color-mix(in srgb, var(--background-color), transparent 30%);
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-}
-
-.events .section-title h2 {
-  color: #ffffff;
+.swiper-wrapper h1 {
+  color:var(--vert);
+  font-family: var(--heading-font);
+  font-size: 4rem;
+  text-align: left;
 }
 
 .events .container {
@@ -1069,9 +1195,16 @@ section{
   z-index: 3;
 }
 
-.events .event-item h3 {
-  font-weight: 700;
-  font-size: 30px;
+.events .event-item ul {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  margin-top: 5%;
+
+}
+.events .event-item ul li{
+  border: 2px solid #000000;
+  padding:1%;
 }
 
 .events .event-item .price {
@@ -1124,74 +1257,6 @@ section{
   background-color: var(--accent-color);
 }
 
-/*--------------------------------------------------------------
-# Book A Table Section
---------------------------------------------------------------*/
-.book-a-table .reservation-img {
-  min-height: 500px;
-  background-size: cover;
-  background-position: center;
-}
-
-.book-a-table .reservation-form-bg {
-  background: color-mix(in srgb, var(--default-color), transparent 97%);
-}
-
-.book-a-table .php-email-form {
-  padding: 30px;
-}
-
-@media (max-width: 575px) {
-  .book-a-table .php-email-form {
-    padding: 20px;
-  }
-}
-
-.book-a-table .php-email-form input[type=text],
-.book-a-table .php-email-form input[type=email],
-.book-a-table .php-email-form input[type=number],
-.book-a-table .php-email-form input[type=date],
-.book-a-table .php-email-form input[type=time],
-.book-a-table .php-email-form textarea {
-  font-size: 14px;
-  padding: 10px 15px;
-  box-shadow: none;
-  border-radius: 0;
-  color: var(--default-color);
-  background-color: color-mix(in srgb, var(--background-color), transparent 20%);
-  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
-}
-
-.book-a-table .php-email-form input[type=text]:focus,
-.book-a-table .php-email-form input[type=email]:focus,
-.book-a-table .php-email-form input[type=number]:focus,
-.book-a-table .php-email-form input[type=date]:focus,
-.book-a-table .php-email-form input[type=time]:focus,
-.book-a-table .php-email-form textarea:focus {
-  border-color: var(--accent-color);
-}
-
-.book-a-table .php-email-form input[type=text]::placeholder,
-.book-a-table .php-email-form input[type=email]::placeholder,
-.book-a-table .php-email-form input[type=number]::placeholder,
-.book-a-table .php-email-form input[type=date]::placeholder,
-.book-a-table .php-email-form input[type=time]::placeholder,
-.book-a-table .php-email-form textarea::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
-}
-
-.book-a-table .php-email-form button[type=submit] {
-  color: var(--contrast-color);
-  background: var(--accent-color);
-  border: 0;
-  padding: 14px 60px;
-  transition: 0.4s;
-  border-radius: 4px;
-}
-
-.book-a-table .php-email-form button[type=submit]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
-}
 
 /*--------------------------------------------------------------
 # Gallery Section

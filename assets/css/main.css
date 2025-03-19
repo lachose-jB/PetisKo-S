@@ -964,7 +964,7 @@ section{
 }
 .section-title h1{
   font-family: var(--heading-font);
-  color: var(--jaune);
+  color: var(--jaune) !important;
 }
 
 .book-a-table .reservation-form-bg {

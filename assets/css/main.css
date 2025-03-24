@@ -154,6 +154,9 @@ section{
   padding-bottom: 60px;
   position: relative;
 }
+.section-titless1{
+  color: var(--noir) !important;
+}
 
 .section-title h2 {
   font-size: 13px;
@@ -166,7 +169,7 @@ section{
   display: inline-block;
   text-transform: uppercase;
   border-radius: 50px;
-  font-family: var(--default-font);
+  font-family: var(--nav-font)
 }
 
 .section-title div {
@@ -889,13 +892,14 @@ section{
 }
 .about .content h3 {
   font-size: 1rem;
-  font-family: var(--default-font);
+  font-family: var(--nav-font);
   text-align: left;
+  color: var(--vert);
 }
 .about .content h1 {
   font-size: 3rem;
   font-family: var(--heading-font) !important;
-  color: var(--vert);
+  color: var(--noir);
   text-align: left;
   margin:0 0 5% 0
 }
@@ -939,6 +943,39 @@ section{
   position: absolute;
   left: calc(50% - 47px);
   top: calc(50% - 47px);
+}
+.leftCl{
+  display: flex !important;
+  justify-content: end;
+  align-content: end;
+}
+.year25{
+  position: relative;
+  background-color: var(--vert);
+  width: 185px;
+  height: 135px;
+  top: 260px;
+  right: 10px;
+  z-index: 10;
+  justify-content: center;
+  text-align: center;
+  color: var(--blanc);
+}
+.year25 h1{
+  font-family: var(--nav-font);
+  font-size: 5em !important;
+}
+.img-fluid{
+  width: 100%;
+}
+.img-fluid2 {
+  width: 40%;
+  position: absolute;
+  z-index: 8;
+  left: 0;
+  bottom: 150px;
+  border: 6px solid #fff;
+  transform: rotate(30deg);
 }
 
 /*--------------------------------------------------------------
@@ -1096,6 +1133,13 @@ section{
 /*--------------------------------------------------------------
 # Menu Section
 --------------------------------------------------------------*/
+
+.logoMen{
+  width: 20%;
+  position: absolute ;
+  padding-top: 15%;
+  left: 20%;
+}
 .menu{
   display: flex;
   justify-content: center;
@@ -1181,14 +1225,14 @@ section{
 }
 
 .swiper-wrapper h2 {
-  color:var(--noir);
+  color:var(--vert);
   font-family: var(--nav-font);
   font-size: 1rem;
   text-align: left;
 }
 
 .swiper-wrapper h1 {
-  color:var(--vert);
+  color:var(--noir);
   font-family: var(--heading-font);
   font-size: 4rem;
   text-align: left;

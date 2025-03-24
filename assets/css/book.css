@@ -253,17 +253,75 @@
     padding: 20px;
 }
 
+.menuecover1 {
+  width: 300px;
+  height: 400px;
+  margin: auto;
+  background-image: url('../img/menu/2.svg') !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.menuecover2 {
+  width: 300px;
+  height: 400px;
+  margin: auto;
+  background-image: url('../img/menu/3.svg') !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.menuecover3 {
+  width: 300px;
+  height: 400px;
+  margin: auto;
+  background-image: url('../img/menu/4.svg') !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.menuecover4 {
+  width: 300px;
+  height: 400px;
+  margin: auto;
+  background-image: url('../img/menu/5.svg') !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+.maincoverEnd {
+  width: 300px;
+  height: 400px;
+  margin: auto;
+  background-image: url('../img/menu/6.svg') !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 5px solid #8B4513;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+}
+
 /* Style général pour les pages paires */
 .pagesPaire {
-	background-color: #008F3D; /* Vert intense */
-	color: #FFD700; /* Doré */
-	font-family: 'Georgia', serif;
-	text-align: center;
 	padding: 30px;
 	margin: 10px auto;
 	border-radius: 15px;
 	position: relative;
-	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
   }
   
   /* Style des titres */

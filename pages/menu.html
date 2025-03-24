@@ -58,158 +58,78 @@
         <main class="main">
 
             <!-- Hero Section -->
-            <section id="hero" class="hero heroMe section dark-background">
-                <div id="hero-carousel" class=" heroMe carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-                    <div class="carousel-item active">
-                        <img src="../assets/img/2.jpg" alt="">
-                        <div class="carousel-container">
-                            <h2 class="bannerh2">
-                                <span class="line"></span> NOTRE MENU<span class="line"></span>
-                            </h2>
-                        </div>
-                    </div>
+            <section id="hero" class="hero section dark-background">
+              <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+                <div class="carousel-item active">
+                  <img src="../assets/img/4.jpg" alt="">
+                  <div class="carousel-container">
+                    <article class="titleContainer">
+                      <h2 class="bannerh2">
+                        <span class="line"></span> Menu <span class="line"></span>
+                      </h2>
+                      <h1 class="bannerh1">
+                        Pétisko's
+                      </h1>
+                    </article>
+                  </div>
                 </div>
+              </div>
             </section><!-- /Hero Section -->
-
-            <!-- Menu Section -->
             <!-- Menu Section -->
             <section id="menu" class="menu section">
+              
+                <img src="../assets/img/logo2.png" alt="" class="logoMen">
                 <div class="book">
                     <div id="pages" class="pages">
                         <div class="page maincover">
-                            <button class="rotate-button" onclick="rotatePage()">Ovrir</button>
+                            <button class="rotate-button" onclick="rotatePage()">Ouvrir</button>
                         </div>
 
                         <!-- Page 1: Commande -->
                         <div class="page pagesInpaire">
-                            <h2>Votre Commande</h2>
-                            <div id="order-list">
-                                <!-- List of ordered dishes will appear here -->
-                            </div>
-                            <div id="order-total">
-                                <p>Total: <span id="total-price">0€</span></p>
-                            </div>
-                            <button onclick="payOrder()">Payer</button>
-                            <button onclick="cancelOrder()">Annuler</button>
+                            
                         </div>
 
                         <!-- Page 2: Entrées -->
-                        <div class="page pagesPaire">
-                            <h2>Entrées Chaudes</h2>
-                            <ul>
-                                <li onclick="addToOrder('Œuf cocote', 6)">Œuf cocote - 6€</li>
-                                <li onclick="addToOrder('Camembert cuit', 6)">Camembert cuit - 6€</li>
-                                <li onclick="addToOrder('Gézier de poulet', 6)">Gézier de poulet - 6€</li>
-                            </ul>
-
-                            <h2>Entrées Froides</h2>
-                            <ul>
-                                <li onclick="addToOrder('Mélange Jambon', 6)">Mélange Jambon - 6€</li>
-                                <li onclick="addToOrder('Avocat crevette', 6)">Avocat crevette - 6€</li>
-                                <li onclick="addToOrder('Surimi crevette', 6)">Surimi crevette - 6€</li>
-                            </ul>
+                        <div class="page pagesPaire menuecover1">
+                            
                             <button class="rotate-button" onclick="rotatePage()">Tourner la page</button>
                         </div>
 
                         <!-- Page 3: Commande -->
                         <div class="page pagesInpaire">
-                            <h2>Votre Commande</h2>
-                            <div id="order-list-3">
-                                <!-- List of ordered dishes will appear here -->
-                            </div>
-                            <div id="order-total-3">
-                                <p>Total: <span id="total-price-3">0€</span></p>
-                            </div>
-                            <button onclick="payOrder()">Payer</button>
-                            <button onclick="cancelOrder()">Annuler</button>
+                           
                         </div>
 
                         <!-- Page 4: Plats -->
-                        <div class="page pagesPaire">
-                            <h2>Grillades au Charbon</h2>
-                            <ul>
-                                <li onclick="addToOrder('Poulet grillé entier', 9)">Poulet grillé entier - 9€</li>
-                                <li onclick="addToOrder('Travers de porc 500g', 15)">Travers de porc 500g - 15€</li>
-                                <li onclick="addToOrder('Poitrine de porc 500g', 15)">Poitrine de porc 500g - 15€</li>
-                                <li onclick="addToOrder('Picanha', 18)">Picanha (riz et haricot rouge) - 18€</li>
-                                <li onclick="addToOrder('Jatinha', 18)">Jatinha (Brochette de poulet, bœuf, porc) avec riz/magnoque - 18€</li>
-                                <li onclick="addToOrder('Feijao', 8)">Feijao - 8€</li>
-                            </ul>
-                            <h2>Poissons</h2>
-                            <ul>
-                                <li onclick="addToOrder('Daurade Grillée', 12)">Daurade Grillée - 12€</li>
-                                <li onclick="addToOrder('Saumon en sauce', 14)">Saumon en sauce - 14€</li>
-                                <li onclick="addToOrder('Morue au four', 13)">Morue au four - 13€</li>
-                            </ul>
+                        <div class="page pagesPaire menuecover2">
+                            
                             <button class="rotate-button" onclick="rotatePage()">Tourner la page</button>
                         </div>
 
                         <!-- Page 5: Commande -->
                         <div class="page pagesInpaire">
-                            <h2>Votre Commande</h2>
-                            <div id="order-list-5">
-                                <!-- List of ordered dishes will appear here -->
-                            </div>
-                            <div id="order-total-5">
-                                <p>Total: <span id="total-price-5">0€</span></p>
-                            </div>
-                            <button onclick="payOrder()">Payer</button>
-                            <button onclick="cancelOrder()">Annuler</button>
+                            
                         </div>
 
                         <!-- Page 6: Desserts -->
-                        <div class="page pagesPaire">
-                            <h2>Desserts Maison</h2>
-                            <ul>
-                                <li onclick="addToOrder('Pavé', 5)">Pavé (Crème et biscuit speculos) - 5€</li>
-                                <li onclick="addToOrder('Crème brûlée', 6)">Crème brûlée - 6€</li>
-                                <li onclick="addToOrder('Mousse au chocolat', 5)">Mousse au chocolat - 5€</li>
-                                <li onclick="addToOrder('Salade de fruits', 4)">Salade de fruits - 4€</li>
-                                <li onclick="addToOrder('Puding', 4)">Puding (Flan) - 4€</li>
-                            </ul>
-                            <h2>Fromages</h2>
-                            <ul>
-                                <li onclick="addToOrder('Camembert', 7)">Camembert - 7€</li>
-                                <li onclick="addToOrder('Brie', 7)">Brie - 7€</li>
-                                <li onclick="addToOrder('Chèvre', 8)">Chèvre - 8€</li>
-                                <li onclick="addToOrder('Roquefort', 8)">Roquefort - 8€</li>
-                            </ul>
+                        <div class="page pagesPaire menuecover3">
+                           
                             <button class="rotate-button" onclick="rotatePage()">Tourner la page</button>
                         </div>
 
                         <!-- Page 7: Commande -->
                         <div class="page pagesInpaire">
-                            <h2>Votre Commande</h2>
-                            <div id="order-list-7">
-                                <!-- List of ordered dishes will appear here -->
-                            </div>
-                            <div id="order-total-7">
-                                <p>Total: <span id="total-price-7">0€</span></p>
-                            </div>
-                            <button onclick="payOrder()">Payer</button>
-                            <button onclick="cancelOrder()">Annuler</button>
+                           
                         </div>
 
                         <!-- Page 8: Boissons et Vins -->
-                        <div class="page pagesPaire">
-                            <h2>Jus, Sodas, Cocktails</h2>
-                            <ul>
-                                <li onclick="addToOrder('Jus de fruit', 4)">Jus de fruit - 4€</li>
-                                <li onclick="addToOrder('Eaux', 2)">Eaux - 2€</li>
-                                <li onclick="addToOrder('Sans alcool', 3)">Sans alcool - 3€</li>
-                                <li onclick="addToOrder('Cocktails', 5)">Cocktails (Caipirinha, Sangria) - 5€</li>
-                            </ul>
-
-                            <h2>Vins</h2>
-                            <ul>
-                                <li onclick="addToOrder('Vin blanc', 17)">Vin blanc (Chardonnay, Muralhas) - 17€</li>
-                                <li onclick="addToOrder('Vin rouge', 17)">Vin rouge (JP Azeita, Malbec) - 17€</li>
-                                <li onclick="addToOrder('Rosé', 18)">Rosé (Mateus - 18€, Danjou - 20€)</li>
-                            </ul>
+                        <div class="page pagesPaire menuecover4">
+                            
                             <button class="rotate-button" onclick="rotatePage()">Tourner la page</button>
                         </div>
 
-                        <div class="page maincover">
+                        <div class="page maincoverEnd">
                             <button class="rotate-button" onclick="rotatePage()">bye</button>
                         </div>
                     </div>
@@ -224,65 +144,60 @@
         <footer id="footer" class="footer dark-background">
 
             <div class="container">
-            <div class="row gy-3">
-                <div class="col-lg-3 col-md-6 d-flex">
-                <i class="bi bi-geo-alt icon"></i>
-                <div class="address">
+              <div class="row gy-3 text-center align-items-cente">
+                <div class="col-lg-3 col-md-6 d-flex align-items-start">
+                  <i class="bi bi-geo-alt icon"></i>
+                  <div class="address">
                     <h4>Address</h4>
-                    <p>A108 Adam Street</p>
-                    <p>New York, NY 535022</p>
+                    <p>ADRESSE: 49 AV. JEAN-BAPTISTE CLEMENT</p>
+                    <p>77290 MITRY-MORY, France</p>
                     <p></p>
+                  </div>
+        
                 </div>
-
-                </div>
-
+        
                 <div class="col-lg-3 col-md-6 d-flex">
-                <i class="bi bi-telephone icon"></i>
-                <div>
+                  <i class="bi bi-telephone icon"></i>
+                  <div>
                     <h4>Contact</h4>
                     <p>
-                    <strong>Phone:</strong> <span>+1 5589 55488 55</span><br>
-                    <strong>Email:</strong> <span>info@example.com</span><br>
+                      <strong> Téléphone: </strong> <span> +33763698781 </span> <br>
+                      <strong>Email:</strong> <span>info@Petiskos.com</span><br>
                     </p>
+                  </div>
                 </div>
-                </div>
-
+        
                 <div class="col-lg-3 col-md-6 d-flex">
-                <i class="bi bi-clock icon"></i>
-                <div>
+                  <i class="bi bi-clock icon"></i>
+                  <div>
                     <h4>Opening Hours</h4>
                     <p>
-                    <strong>Mon-Sat:</strong> <span>11AM - 23PM</span><br>
-                    <strong>Sunday</strong>: <span>Closed</span>
+                      <strong>Lundi au Samedi:</strong> <span>11AM - 23PM</span><br>
+                      <strong>SundayDimanche</strong>: <span>Fermée</span>
                     </p>
+                  </div>
                 </div>
-                </div>
-
+        
                 <div class="col-lg-3 col-md-6">
-                <h4>Follow Us</h4>
-                <div class="social-links d-flex">
+                  <h4> Suivez-nous </h4>
+                  <div class="social-links d-flex">
                     <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
                     <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.instagram.com/barpetiskos/" class="instagram"><i class="bi bi-instagram"></i></a>
                     <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                  </div>
                 </div>
-                </div>
-
+        
+              </div>
             </div>
-            </div>
-
+        
             <div class="container copyright text-center mt-4">
-            <p>© <span>Copyright</span> <strong class="px-1 sitename">Delicious</strong> <span>All Rights Reserved</span></p>
-            <div class="credits">
-                <!-- All the links in the footer should remain intact. -->
-                <!-- You can delete the links only if you've purchased the pro version. -->
-                <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+              <p>© <span>Droit d'auteur</span> <strong class="px-1 sitename">Petisko’s</strong> <span>Tous droits réservés</span></p>
+              <div class="credits">
+                Conçu par <a href="https://bn2smart.com/">bn2smart</a>
+              </div>
             </div>
-            </div>
-
-        </footer>
+          </footer>
 
         <!-- Scroll Top -->
         <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

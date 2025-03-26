@@ -26,15 +26,20 @@ function rotatePage() {
     var nextPage = currentPage.nextElementSibling;
     if (nextPage) {
       nextPage.classList.add('flipped');
-    } else {
-      // Si c'est la dernière page, revenir à la première page
-      // Réinitialiser toutes les pages
-      for (var j = 0; j < pages.length; j++) {
-        pages[j].classList.remove('flipped');
-      }
-      
-      // Revenir à la première page
-      pages[0].classList.add('flipped');
     }
+  } else {
+    // Si toutes les pages sont déjà tournées, recommencer depuis la première
+    reversePages();
+  }
+}
+
+// Fonction pour revenir progressivement à la première page
+function reversePages() {
+  for (var j = pages.length - 1; j >= 0; j--) {
+    (function(index) {
+      setTimeout(function() {
+        pages[index].classList.remove('flipped');
+      }, 200 * (pages.length - index)); // Ajout d'un délai pour un effet progressif
+    })(j);
   }
 }

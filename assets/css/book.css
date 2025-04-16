@@ -1,120 +1,14 @@
-/* Général (Mobile) */
-@media (max-width: 768px) {
-    .book {
-        /* Ajustez la largeur, la taille de la police, etc. pour les petits écrans */
-        padding: 10px;
-    }
-    .book p {
-        font-size: 6vw;
-        margin-top: 12vw;
-    }
-    .page {
-        width: 80vw; /* Augmente la largeur pour les petits écrans */
-        height: auto;
-    }
-    .book .pages {
-        width: 80vw;
-        height: auto;
-    }
-    .book .page {
-        width: 80vw;
-        height: auto;
-        transform-origin: center center;
-    }
-    .maincover {
-        width: 80%; /* Diminue la largeur sur mobile */
-        height: auto;
-    }
-    /* Redimensionner les pagesPaire pour mobile */
-    .pagesPaire {
-        font-size: 1.2em;
-        padding: 20px;
-    }
-    .pagesPaire ul li {
-        font-size: 0.9em;
-    }
-    /* Ajuster le bouton de rotation */
-    .rotate-button {
-        bottom: 10px;
-        right: 10px;
-        padding: 8px 16px;
-        font-size: 14px;
-    }
+
+.logoMen{
+  position: relative;
+  width: 20%;
+  left: 35%;
 }
-
-/* Tablette */
-@media (max-width: 1024px) {
-    .book p {
-        font-size: 5vw;
-        margin-top: 10vw;
-    }
-    .page {
-        width: 70vw; /* Réduit la taille de la page */
-        height: auto;
-    }
-    .book .pages {
-        width: 70vw;
-        height: auto;
-    }
-    .book .page {
-        width: 70vw;
-        height: auto;
-        transform-origin: center center;
-    }
-    .maincover {
-        width: 70%; /* Réduire la largeur pour tablette */
-        height: auto;
-    }
-    .pagesPaire {
-        font-size: 1.5em;
-        padding: 25px;
-    }
-    .pagesPaire ul li {
-        font-size: 1em;
-    }
-}
-
-/* Desktop */
-@media (min-width: 1025px) {
-    /* Styles par défaut pour les écrans plus grands */
-    .book {
-        width: 60vw;
-    }
-    .book p {
-        font-size: 2vw;
-    }
-    .page {
-        width: 30vw;
-        height: 44vw;
-    }
-    .book .pages {
-        width: 60vw;
-        height: 44vw;
-    }
-    .book .page {
-        width: 30vw;
-        height: 44vw;
-    }
-    .maincover {
-        width: 300px;
-        height: 400px;
-    }
-    .pagesPaire {
-        font-size: 2em;
-        padding: 30px;
-    }
-    .rotate-button {
-        bottom: 20px;
-        right: 20px;
-        padding: 10px 20px;
-    }
-}
-
-
 .book {
 	transition: opacity 0.4s 0.2s;
 	justify-content: center;
 	text-align: center;
+  width: 100%;
   }
   .book p{
 	margin-top: 8vw;
@@ -424,4 +318,118 @@
 .rotate-button:hover {
     background-color: #00428d; /* Couleur plus sombre au survol */
 }
+.pagesInpaire{
+  background-color: #cacaca !important;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
 
+  .pagesInpaire h2 {
+  font-size: 2rem;
+  margin: 20px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  }
+  
+  /* Ligne décorative sous les titres */
+}
+
+
+/* ================================================================================================================================== */
+/* ================================================================================================================================== */
+/* ================================================================================================================================== */
+/* ================================================================================================================================== */
+
+/* ===================== */
+/* RESPONSIVE POUR TABLETTES */
+/* ===================== */
+@media (max-width: 1024px) {
+  .logoMen {
+    width: 30%;
+    left: 35%;
+  }
+
+  .book p {
+    font-size: 4vw;
+    margin-top: 10vw;
+  }
+
+  .book .pages {
+    width: 80vw;
+    height: 60vw;
+  }
+
+  .book .page {
+    width: 40vw;
+    height: 60vw;
+  }
+
+  .maincover,
+  .menuecover1,
+  .menuecover2,
+  .menuecover3,
+  .menuecover4,
+  .maincoverEnd {
+    width: 250px;
+    height: 350px;
+  }
+
+  .pagesPaire h2 {
+    font-size: 1.5rem;
+  }
+
+  .pagesPaire ul li {
+    font-size: 0.8em;
+  }
+}
+
+
+/* ===================== */
+/* RESPONSIVE POUR MOBILE */
+/* ===================== */
+@media (max-width: 768px) {
+  .logoMen {
+    width: 50%;
+    left: 25%;
+  }
+
+  .book p {
+    font-size: 6vw;
+    margin-top: 12vw;
+  }
+
+  .book .pages {
+    width: 90vw;
+    height: 70vw;
+  }
+
+  .book .page {
+    width: 45vw;
+    height: 70vw;
+  }
+
+  .maincover,
+  .menuecover1,
+  .menuecover2,
+  .menuecover3,
+  .menuecover4,
+  .maincoverEnd {
+    width: 90%;
+    height: auto;
+    aspect-ratio: 3 / 4;
+  }
+
+  .pagesPaire h2 {
+    font-size: 1.2rem;
+  }
+
+  .pagesPaire ul li {
+    font-size: 0.9em;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .rotate-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}

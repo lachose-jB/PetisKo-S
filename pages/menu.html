@@ -1,46 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <title>PETISKO'S-Menu</title>
-        <meta name="description" content="">
-        <meta name="keywords" content="">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>PETISKO'S - Menu</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
 
-        <!-- Favicons -->
-        <link href="../assets/img/logo.png" rel="icon">
-        <link href="../assets/img/logo.png" rel="apple-touch-icon">
+    <!-- Favicons -->
+    <link href="../assets/img/logo.png" rel="icon">
+    <link href="../assets/img/logo.png" rel="apple-touch-icon">
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com" rel="preconnect">
-        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy:wght@400&display=swap" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Poppins:wght@100;400;700&family=Satisfy:wght@400&display=swap" rel="stylesheet">
 
-        <!-- Vendor CSS Files -->
-        <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-        <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
-        <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-        <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-        <!-- Main CSS File -->
-        <link href="../assets/css/main.css" rel="stylesheet">
-        <link href="../assets/css/book.css" rel="stylesheet">
-    </head>
+    <!-- Main CSS File -->
+    <link href="../assets/css/main.css" rel="stylesheet">
+    <link href="../assets/css/book.css" rel="stylesheet">
+</head>
 
-    <body class="index-page">
+<body class="index-page">
 
-        <header id="header" class="header fixed-top">
-            <div class="branding d-flex align-items-cente">
-                <div class="container position-relative d-flex align-items-center justify-content-between">
-                    <a href="../index.html" class="logo d-flex align-items-center">
-                    <!-- Uncomment the line below if you also wish to use an image logo -->
-                    <img src="../assets/img/logo.png" alt="" class="logoTop"> 
-                    <!--<h1 class="sitename">Delicious</h1>-->
-                    </a>
-
-                    <nav id="navmenu" class="navmenu">
+    <!-- Header -->
+    <header id="header" class="header fixed-top">
+        <div class="branding d-flex align-items-center">
+            <div class="container position-relative d-flex align-items-center justify-content-between">
+                <a href="../index.html" class="logo d-flex align-items-center" title="Retour à l'accueil">
+                    <img src="../assets/img/logo.png" alt="" class="logoTop">
+                </a>
+                <nav id="navmenu" class="navmenu">
                     <ul>
                         <li><a href="../index.html">Accueil</a></li>
                         <li><a href="#" class="active">Voir le menu</a></li>
@@ -49,174 +47,135 @@
                         <li><a href="./contact.html">Nous contacter</a></li>
                     </ul>
                     <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-                    </nav>
-
-                </div>
+                </nav>
             </div>
-        </header>
+        </div>
+    </header>
+    <!-- /Header -->
 
-        <main class="main">
+    <main class="main">
 
-            <!-- Hero Section -->
-            <section id="hero" class="hero section dark-background">
-              <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+        <!-- Hero Section -->
+        <section id="hero" class="hero section dark-background">
+            <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
                 <div class="carousel-item active">
-                  <img src="../assets/img/4.jpg" alt="">
-                  <div class="carousel-container">
-                    <article class="titleContainer">
-                      <h2 class="bannerh2">
-                        <span class="line"></span> Menu <span class="line"></span>
-                      </h2>
-                      <h1 class="bannerh1">
-                        Pétisko's
-                      </h1>
-                    </article>
-                  </div>
-                </div>
-              </div>
-            </section><!-- /Hero Section -->
-            <!-- Menu Section -->
-            <section id="menu" class="menu section">
-              
-                <img src="../assets/img/logo2.png" alt="" class="logoMen">
-                <div class="book">
-                    <div id="pages" class="pages">
-                        <div class="page maincover">
-                            <button class="rotate-button" onclick="rotatePage()">Ouvrir</button>
-                        </div>
-
-                        <!-- Page 1: Commande -->
-                        <div class="page pagesInpaire">
-                            
-                        </div>
-
-                        <!-- Page 2: Entrées -->
-                        <div class="page pagesPaire menuecover1">
-                            
-                            <button class="rotate-button" onclick="rotatePage()">Tourner la page</button>
-                        </div>
-
-                        <!-- Page 3: Commande -->
-                        <div class="page pagesInpaire">
-                           
-                        </div>
-
-                        <!-- Page 4: Plats -->
-                        <div class="page pagesPaire menuecover2">
-                            
-                            <button class="rotate-button" onclick="rotatePage()">Tourner la page</button>
-                        </div>
-
-                        <!-- Page 5: Commande -->
-                        <div class="page pagesInpaire">
-                            
-                        </div>
-
-                        <!-- Page 6: Desserts -->
-                        <div class="page pagesPaire menuecover3">
-                           
-                            <button class="rotate-button" onclick="rotatePage()">Tourner la page</button>
-                        </div>
-
-                        <!-- Page 7: Commande -->
-                        <div class="page pagesInpaire">
-                           
-                        </div>
-
-                        <!-- Page 8: Boissons et Vins -->
-                        <div class="page pagesPaire menuecover4">
-                            
-                            <button class="rotate-button" onclick="rotatePage()">Tourner la page</button>
-                        </div>
-
-                        <div class="page maincoverEnd">
-                            <button class="rotate-button" onclick="rotatePage()">bye</button>
-                        </div>
+                    <img src="../assets/img/4.jpg" alt="">
+                    <div class="carousel-container">
+                        <article class="titleContainer">
+                            <h2 class="bannerh2">
+                                <span class="line"></span> Menu <span class="line"></span>
+                            </h2>
+                            <h1 class="bannerh1">Pétisko's</h1>
+                        </article>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
+        <!-- /Hero Section -->
 
-            <!-- /Menu Section -->
+        <!-- Menu Section -->
+        <section id="menu" class="menu section">
+            <img src="../assets/img/logo2.png" alt="" class="logoMen">
+            <div class="book">
+                <div id="pages" class="pages">
 
+                    <!-- Cover Page -->
+                    <div class="page maincover">
+                        <button class="rotate-button" onclick="rotatePage()">Ouvrir</button>
+                    </div>
 
-        </main>
+                    <!-- Menu Pages -->
+                    <div class="page pagesInpaire"></div> <!-- Page 1: Commande -->
+                    <div class="page pagesPaire menuecover1">
+                        <button class="rotate-button" onclick="rotatePage()">Tourner la page</button>
+                    </div> <!-- Page 2: Entrées -->
+                    <div class="page pagesInpaire"></div> <!-- Page 3: Commande -->
+                    <div class="page pagesPaire menuecover2">
+                        <button class="rotate-button" onclick="rotatePage()">Tourner la page</button>
+                    </div> <!-- Page 4: Plats -->
+                    <div class="page pagesInpaire"></div> <!-- Page 5: Commande -->
+                    <div class="page pagesPaire menuecover3">
+                        <button class="rotate-button" onclick="rotatePage()">Tourner la page</button>
+                    </div> <!-- Page 6: Desserts -->
+                    <div class="page pagesInpaire"></div> <!-- Page 7: Commande -->
+                    <div class="page pagesPaire menuecover4">
+                        <button class="rotate-button" onclick="rotatePage()">Tourner la page</button>
+                    </div> <!-- Page 8: Boissons et Vins -->
 
-        <footer id="footer" class="footer dark-background">
+                    <!-- End Cover Page -->
+                    <div class="page maincoverEnd">
+                        <button class="rotate-button" onclick="rotatePage()">bye</button>
+                    </div>
 
-            <div class="container">
-              <div class="row gy-3 text-center align-items-cente">
+                </div>
+            </div>
+        </section>
+        <!-- /Menu Section -->
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer dark-background">
+        <div class="container">
+            <div class="row gy-3 text-center align-items-center">
                 <div class="col-lg-3 col-md-6 d-flex align-items-start">
-                  <i class="bi bi-geo-alt icon"></i>
-                  <div class="address">
-                    <h4>Address</h4>
-                    <p>ADRESSE: 49 AV. JEAN-BAPTISTE CLEMENT</p>
-                    <p>77290 MITRY-MORY, France</p>
-                    <p></p>
-                  </div>
-        
+                    <i class="bi bi-geo-alt icon"></i>
+                    <div class="address">
+                        <h4>Address</h4>
+                        <p>49 AV. JEAN-BAPTISTE CLEMENT<br>77290 MITRY-MORY, France</p>
+                    </div>
                 </div>
-        
                 <div class="col-lg-3 col-md-6 d-flex">
-                  <i class="bi bi-telephone icon"></i>
-                  <div>
-                    <h4>Contact</h4>
-                    <p>
-                      <strong> Téléphone: </strong> <span> +33763698781 </span> <br>
-                      <strong>Email:</strong> <span>info@Petiskos.com</span><br>
-                    </p>
-                  </div>
+                    <i class="bi bi-telephone icon"></i>
+                    <div>
+                        <h4>Contact</h4>
+                        <p><strong>Téléphone:</strong> +33763698781<br><strong>Email:</strong> info@Petiskos.com</p>
+                    </div>
                 </div>
-        
                 <div class="col-lg-3 col-md-6 d-flex">
-                  <i class="bi bi-clock icon"></i>
-                  <div>
-                    <h4>Opening Hours</h4>
-                    <p>
-                      <strong>Lundi au Samedi:</strong> <span>11AM - 23PM</span><br>
-                      <strong>SundayDimanche</strong>: <span>Fermée</span>
-                    </p>
-                  </div>
+                    <i class="bi bi-clock icon"></i>
+                    <div>
+                        <h4>Opening Hours</h4>
+                        <p><strong>Lundi au Samedi:</strong> 11AM - 23PM<br><strong>Dimanche:</strong> Fermée</p>
+                    </div>
                 </div>
-        
                 <div class="col-lg-3 col-md-6">
-                  <h4> Suivez-nous </h4>
-                  <div class="social-links d-flex">
-                    <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-                    <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                    <a href="https://www.instagram.com/barpetiskos/" class="instagram"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-                  </div>
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links d-flex">
+                        <a href="#" class="twitter" title="Follow us on Twitter"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="facebook" title="Follow us on Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/barpetiskos/" class="instagram" title="Follow us on Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="linkedin" title="Follow us on LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    </div>
                 </div>
-        
-              </div>
             </div>
-        
-            <div class="container copyright text-center mt-4">
-              <p>© <span>Droit d'auteur</span> <strong class="px-1 sitename">Petisko’s</strong> <span>Tous droits réservés</span></p>
-              <div class="credits">
-                Conçu par <a href="https://bn2smart.com/">bn2smart</a>
-              </div>
-            </div>
-          </footer>
+        </div>
+        <div class="container copyright text-center mt-4">
+            <p>© <strong>Petisko’s</strong> Tous droits réservés</p>
+            <div class="credits">Conçu par <a href="https://bn2smart.com/">bn2smart</a></div>
+        </div>
+    </footer>
+    <!-- /Footer -->
 
-        <!-- Scroll Top -->
-        <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" title="Scroll to top"><i class="bi bi-arrow-up-short"></i></a>
 
-        <!-- Preloader -->
-        <div id="preloader"></div>
+    <!-- Preloader -->
+    <div id="preloader"></div>
 
-        <!-- Vendor JS Files -->
-        <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="../assets/vendor/php-email-form/validate.js"></script>
-        <script src="../assets/vendor/aos/aos.js"></script>
-        <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
-        <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-        <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-        <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+    <script src="../assets/vendor/aos/aos.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-        <!-- Main JS File -->
-        <script src="../assets/js/book.js"></script>
-        <script src="../assets/js/main.js"></script>
-        <script src="../forms/commandeM.js"></script>
-    </body>
+    <!-- Main JS File -->
+    <script src="../assets/js/book.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../forms/commandeM.js"></script>
+</body>
+
 </html>

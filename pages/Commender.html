@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>PETISKO'S-Contact</title>
+  <title>PETISKO'S-Reservation</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -45,8 +45,8 @@
             <li><a href="../index.html">Accueil</a></li>
             <li><a href="menu.html">Voir le menu</a></li>
             <li><a href="reservation.html">Réserver une table</a></li>
-            <li><a href="Commender.html">Commander en ligne</a></li>
-            <li><a href="#" class="active">Nous contacter</a></li>
+            <li><a href="#" class="active">Commander en ligne</a></li>
+            <li><a href="contact.html">Nous contacter</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -67,7 +67,7 @@
           <div class="carousel-container">
             <article class="titleContainer">
               <h2 class="bannerh2">
-                <span class="line"></span> contact <span class="line"></span>
+                <span class="line"></span> Commander en ligne <span class="line"></span>
               </h2>
               <h1 class="bannerh1">
                 Pétisko's
@@ -78,82 +78,58 @@
       </div>
     </section><!-- /Hero Section -->
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
+    <!-- Events Section -->
+    <section id="events" class="events section">
+      <div class="container secFlex">
+        <img src="../assets/img/logo2.png" alt="" class="logoMid">
+        
+        <div class="swiper init-swiper" data-aos="fade-up" data-aos-delay="100">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <div><span>Vérifiez notre</span> <span class="description-title">Contact</span></div>
-      </div><!-- End Section Title -->
-
-      <div class="mb-5 align-items-cente w-100">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2619.775032546337!2d2.5994778110561088!3d48.95776939358959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6171df3573caf%3A0x8be887ec477c7465!2s49%20Av.%20Jean-Baptiste%20Cl%C3%A9ment%2C%2077290%20Mitry-Mory!5e0!3m2!1sfr!2sfr!4v1742826208888!5m2!1sfr!2sfr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div><!-- End Google Maps -->
-
-      <div class="container" data-aos="fade">
-
-        <div class="row gy-5 gx-lg-5">
-
-          <div class="col-lg-4 w-100 align-items-center">
-
-            <div class="info text-center">
-              <h3>Entrer en contact</h3>
-              <p>Et ce sont les plaisirs, et aucun plaisir au temps du plus petit du sens minimal du moins.</p>
-
-              <div class="info-item d-flex">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h4>Emplacement:</h4>
-                  <p>49 AV. JEAN-BAPTISTE CLEMENT,77290 MITRY-MORY, France</p>
+            <div class="swiper-slide">
+              <div class="row gy-4 event-item">
+                <div class="col-lg-6">
+                  <img src="../assets/img/bar.jpg" class="img-fluid rounded-image" alt="">
                 </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h4>Email:</h4>
-                  <p>contact@petiskos.fr</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex">
-                <i class="bi bi-phone flex-shrink-0"></i>
-                <div>
-                  <h4>Appel:</h4>
-                  <p>+33763698781</p>
-                </div>
-              </div><!-- End Info Item -->
-
-            </div>
-
+                <div class="col-lg-6 pt-4 pt-lg-0 ml-4 content contentCom">
+                  <h2>FAITES-VOUS LIVRER</h2>
+                  <h1>Commandez en ligne et savourez chez vous</h1>
+                  <ul>
+                    <li><i class="bi bi-check2-circle"></i> <span>L'emploi d'Ullamco </span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>Automatiquement la douleur </span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>L'emploi d'Ullamco n'est </span></li>
+                  </ul>
+                  <p>
+                    L'emploi d'Ullamco n'est qu'à l'aliquip de la commodité de la conséquence. Automatiquement dans une douleur irreu dans un plaisir critiqué
+  Veut être une paire de copeaux douloureux, pas plus
+                  </p>
+                  <button class="Sell" onclick="openWhatsApp()">COMMANDER</button>
+                 </div>
+              </div>
+            </div><!-- End Slider item -->
           </div>
-
-          <div class="col-lg-8 w-100">
-            <form action="/forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Votre nom" required="">
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Votre e-mail" required="">
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Objet" required="">
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" placeholder="Message" required=""></textarea>
-              </div>
-              <div class="text-center"><button class="submit Sell"> envoyé </button></div>
-            </form>
-          </div><!-- End Contact Form -->
-
+          <div class="swiper-pagination"></div>
         </div>
 
       </div>
 
-    </section><!-- /Contact Section -->
+    </section>
+    <!-- /Events Section -->
 
   </main>
 
@@ -232,6 +208,22 @@
 
   <!-- Main JS File -->
   <script src="../assets/js/main.js"></script>
+
+  <script>
+    function openWhatsApp() {
+      const url = "https://wa.me/33763698781?text=Bonjour%20je%20souhaite%20commander%20chez%20Pétisko's";
+      const width = 600;
+      const height = 700;
+      const left = (screen.width - width) / 2;
+      const top = (screen.height - height) / 2;
+  
+      window.open(
+        url,
+        'WhatsAppPopup',
+        `width=${width},height=${height},top=${top},left=${left},resizable=yes,scrollbars=yes`
+      );
+    }
+  </script>
 
 </body>
 
